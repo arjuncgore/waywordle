@@ -1,5 +1,5 @@
 # Waywall wordle
-Fun lil wordle game to play for Fun
+Fun lil wordle game to play because I'm bored
 
 ## Structure:
 - List of 5 letter words (get online or smth idk)
