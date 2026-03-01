@@ -13,6 +13,8 @@ local M = {}
 local h = require("waywordle.helpers")
 local words = require("waywordle.words")
 local c = require("waywordle.colors")
+local valid_words = require("waywordle.valid")
+local try_again_text = nil
 
 -- inits
 local cur_word = ""
@@ -64,7 +66,7 @@ function Update_Words(close)
 end
 
 function Update_Goredle(key)
-    if cur_word == "You Win!" or cur_word == "You Lose!" then
+    if cur_word:sub(1, 3) == "You" then
         Clear_Goredle()
     end
     if cur_word_object then
@@ -81,7 +83,7 @@ function Update_Goredle(key)
         end
     elseif key == "Return" and
         #cur_word == 5 and
-        h.list_contains(words, cur_word)
+        h.list_contains(valid_words, cur_word)
     then
         table.insert(word_list, {
             string = cur_word,
@@ -90,7 +92,7 @@ function Update_Goredle(key)
         if cur_word == Chosen_Word then
             cur_word = "You Win!"
         elseif #word_list >= 6 then
-            cur_word = "You Lose!"
+            cur_word = "You Lose!\nWord: \"" .. Chosen_Word .. "\""
         else
             cur_word = ""
         end
