@@ -1,5 +1,5 @@
 # Waywordle
-Fun lil wordle game to play because I'm bored
+Fun lil wordle game to play inside waywall
 
 ## Setup
 1. Close to Waywall config folder
