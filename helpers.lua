@@ -1,5 +1,5 @@
 local waywall = require("waywall")
-local c       = require("goredle.colors")
+local c       = require("waywordle.colors")
 
 local M       = {}
 

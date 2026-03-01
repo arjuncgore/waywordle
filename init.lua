@@ -10,9 +10,9 @@ local cfg = {
 -- ==== IMPORTS
 local waywall = require("waywall")
 local M = {}
-local h = require("goredle.helpers")
-local words = require("goredle.words")
-local c = require("goredle.colors")
+local h = require("waywordle.helpers")
+local words = require("waywordle.words")
+local c = require("waywordle.colors")
 
 -- inits
 local cur_word = ""
