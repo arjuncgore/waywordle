@@ -4,7 +4,7 @@ Fun lil wordle game to play inside waywall
 ## Setup
 1. Close to Waywall config folder
 ```bash
-git clone https://github.com/arjuncgore/waywordle.git ~/.config/waywall
+git clone https://github.com/arjuncgore/waywordle.git ~/.config/waywall/waywordle
 ```
 2. Import to Waywall config
 ```lua
