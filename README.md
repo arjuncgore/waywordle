@@ -2,7 +2,7 @@
 Fun lil wordle game to play inside waywall
 
 ## Setup
-1. Close to Waywall config folder
+1. Clone to Waywall config folder
 ```bash
 git clone https://github.com/arjuncgore/waywordle.git ~/.config/waywall/waywordle
 ```
@@ -17,7 +17,8 @@ to change the key to start/stop it and the positioning. Make sure the start/stop
 
 ## How to play
 Press the start/stop key (F7 by default). This will allow you to type your words. You can use backspace to fix mistakes and enter to submit a word.
-Important: Your keyboard will not work while playing, and the only way to get back functionality of your keyboard is to press the start/stop key again.
+
+> Important: Your keyboard will not work while playing, and the only way to get back functionality of your keyboard is to press the start/stop key again.
 
 ## Credits
 - Lincoln and Justin for the idea
